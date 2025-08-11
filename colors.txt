@@ -1,0 +1,6 @@
+rgb(31 41 55 / var(--tw-ring-opacity))
+
+
+background-color:#030712f2'
+
+dark:bg-gray-900/80

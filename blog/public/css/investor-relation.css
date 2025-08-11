@@ -1,0 +1,14 @@
+.investor-banner {
+    background-image: url('/images/investor-banner.jpg');
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.investor-cards .card {
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.investor-cards .card:hover {
+    transform: translateY(-5px);
+}
