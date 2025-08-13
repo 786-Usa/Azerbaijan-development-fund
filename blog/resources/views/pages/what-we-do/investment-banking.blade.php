@@ -192,7 +192,7 @@
         box-shadow: var(--hover-shadow);
     }
 
-    .card-image {
+    .card-   {
         position: relative;
         height: 320px;
         overflow: hidden;

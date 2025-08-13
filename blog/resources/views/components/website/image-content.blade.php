@@ -14,7 +14,7 @@
     'border' => true
 ])
 
-<div class="container my-5">
+<div class="container-fluid px-5 my-5">
     <div class="row g-0 align-items-stretch internship-section" style="min-height: {{ $minHeight }}; @if($border) border: 1px solid #ddd; @endif">
         <!-- Image Column -->
         <div class="col-md-6 {{ $reverse ? 'order-md-1' : '' }}">

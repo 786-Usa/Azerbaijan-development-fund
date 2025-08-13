@@ -10,16 +10,19 @@
     'contentColor' => '#333',
     'reverse' => false,
     'buttonClass' => 'btn-dark',
+    'subtitle' => 'null',
     // New responsive props
     'titleSize' => 'display-3', // display-1 through display-6
     'contentSize' => 'fs-5', // fs-1 through fs-6
     'mobileStack' => true // Whether to stack columns on mobile
 ])
 
-<div class="container-fluid py-3 py-md-5" style="min-height: {{ $minHeight }};">
-    <div class="row align-items-center mx-0 mx-md-3">
+<div class="container-fluid py-5 py-md-5" style="min-height: {{ $minHeight }};">
+    <div class="row align-items-center py-5 mx-0 mx-md-3">
         <!-- Title Column -->
         <div class="{{ $mobileStack ? 'col-12 col-md-6' : 'col-md-6' }} mb-4 mb-md-0 {{ $reverse ? 'order-md-1' : '' }}">
+           <p class="text-uppercase text-muted small mb-3" style="letter-spacing: 1px;">{{ $subtitle }}</p>
+
             <h1 class="fw-bold {{ $titleSize }}" 
                 style="@if($titleFontSize) font-size: {{ $titleFontSize }}; @endif font-family: {{ $titleFontFamily }};">
                 {{ $title }}

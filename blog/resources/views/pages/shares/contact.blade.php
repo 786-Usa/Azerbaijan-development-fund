@@ -159,3 +159,27 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+   <x-website.two-cards 
+    sectionTitle="Our Firm"
+    heading="We aspire to be the world’s most exceptional financial institution."
+    headingSize="7vw"
+    :cards="[
+        [
+            'image' => 'https://www.goldmansachs.com/what-we-do/investment-banking/insights/articles/global-ma-in-2h-2025/2h16x9.jpg',
+            'title' => 'Sale of Informatica to Salesforce for ~$8B',
+            'text' => 'Goldman Sachs acted as exclusive financial advisor to Informatica—a leader in AI-powered enterprise cloud data management—in its sale to Salesforce for ~$8B.',
+            'link' => '#'
+        ],
+        [
+            'image' => 'https://www.goldmansachs.com/what-we-do/investment-banking/insights/articles/global-ma-in-2h-2025/2h16x9.jpg',
+            'title' => 'World\'s Best Investment Bank for M&A by Euromoney',
+            'text' => 'Euromoney has named Goldman Sachs as the World\'s Best Investment Bank for M&A in the annual Awards for Excellence.',
+            'link' => '#'
+        ]
+    ]"
+/>
