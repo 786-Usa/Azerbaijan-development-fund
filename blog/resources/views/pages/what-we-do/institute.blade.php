@@ -2,17 +2,13 @@
 
 @section('content')
 
-<div class="container py-5">
-  <div class="row">
-    <div class="col-12 col-lg-10 col-xl-8">
-      <span class="text-secondary">What We Do</span>
-      <h1 class="fw-bold fs-1">Global Investment Research</h1>
-      <p class="fw-light fs-4 text-secondary">
-        Providing original, fundamental insights and analysis for clients in the equity, fixed income,
-        currency, and commodities markets.
-      </p>
+<div class="container-fluid py-5">
+    <div class="container-fluid">
+        <div class="container-fluid">
+            {{-- <span class="text-secondary">What We Do</span> --}}
+                  <h1 class="fw-bold display-1">The Goldman Sachs Global Institute</h1>
+        </div>
     </div>
-  </div>
 </div>
 
 <x-website.centered-image imageSrc="/images/chinese-march.jpeg" imageAlt="Transaction Banking">
@@ -40,23 +36,26 @@
 </div>
 
 
-<x-website.card-grid 
-    title="Our Approach"
+<x-website.updated-card
+    sectionSubheading=""
+    sectionHeading="Our Approach"
+    titleSize="fs-1"
     :cards="[
         [
-            'title' => 'Prime Services',
-            'text' => 'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.',
+            'title' => 'Board of Directors',
+            'text' =>  'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.'
         ],
         [
-            'title' => 'Cash Equities and Execution Services',
-            'text' => 'Exchange-based market-making activities include stocks and ETFs, futures and options.',
-            
+            'title' => 'Executive Officers',
+            'text' =>  'Our Executive Officers are dedicated to driving the firm’s strategy and ensuring we deliver for our clients.'
         ],
         [
-            'title' => 'Derivatives',
-            'text' => 'Our market-leading global franchise offers institutional and corporate clients a suite of listed and OTC option strategies.',
+            'title' => 'Management Committee',
+            'text' =>  'The Management Committee is responsible for the firm’s overall strategy and performance, ensuring we meet the needs of our clients and stakeholders.'
+
         ]
     ]"
+    :mobileFullWidth="true"
 />
 
 
@@ -69,43 +68,40 @@
 
 
   <x-website.heading-approach
+    subtitle=""
     title="Positioned to Lead"
     content="We draw on Goldman Sachs’s global network, unrivaled expertise, and best-in-class services in the critical areas facing our clients and the world."
     titleSize="display-4" 
     contentSize="fs-5"    
 />
 
-        <x-website.card-grid  
-
-       
-    title=""
+        <x-website.updated-card
+    sectionSubheading=""
+    sectionHeading="Our Approach"
+    titleSize="fs-1"
     :cards="[
         [
-            'title' => 'Repricing risks post tariff',
-            'text' => 'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.',
-            'link' => '/products/enterprise',
-            'linkText' => 'View demo',
             'image' => '/images/pexels-kampus.jpg',
-            'imageAlt' => 'Enterprise Platform'
+            'title' => 'Board of Directors',
+            'text' =>  'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.'
         ],
-         [
-            'title' => 'Repricing risks post tariff',
-            'text' => 'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.',
-            'link' => '/products/enterprise',
-            'linkText' => 'View demo',
+        [
             'image' => '/images/pexels-kampus.jpg',
-            'imageAlt' => 'Enterprise Platform'
+            'title' => 'Executive Officers',
+            'text' =>  'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.'
         ],
-         [
-            'title' => 'Repricing risks post tariff',
-            'text' => 'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.',
-            'link' => '/products/enterprise',
-            'linkText' => 'View demo',
+        [
             'image' => '/images/pexels-kampus.jpg',
-            'imageAlt' => 'Enterprise Platform'
+            'title' => 'Management Committee',
+            'text' =>  'The Management Committee is responsible for the firm’s overall strategy and performance, ensuring we meet the needs of our clients and stakeholders.'
+
         ]
     ]"
+    :mobileFullWidth="true"
 />
+<div class="container py-5">
+
+</div>
 
 <x-website.four-card-grid 
     title="Latest Insights"

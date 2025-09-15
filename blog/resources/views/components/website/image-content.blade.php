@@ -14,7 +14,7 @@
     'border' => true
 ])
 
-<div class="container-fluid px-5 my-5">
+<div class="container-fluid  px-3 px-md-5 px-lg-5  my-5">
     <div class="row g-0 align-items-stretch internship-section" style="min-height: {{ $minHeight }}; @if($border) border: 1px solid #ddd; @endif">
         <!-- Image Column -->
         <div class="col-md-6 {{ $reverse ? 'order-md-1' : '' }}">
@@ -46,19 +46,23 @@
 
 @once
 <style>
-    .internship-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+  @media (max-width: 767.98px) {
+    .internship-section {
+        min-height: auto !important;
         display: block;
     }
-    
-    body {
-        font-family: "Ubuntu", sans-serif;
+
+    .internship-image img {
+        height: auto !important;
     }
-    
-    /* .container {
-        padding-left: 10px !important;
-    } */
+
+    .internship-content {
+        height: auto !important;
+        padding: 1.5rem !important; /* more breathing room */
+        margin-top: 1rem; /* space between image & content */
+    }
+}
+
+
 </style>
 @endonce

@@ -21,7 +21,7 @@
     
     
       <!-- First Card Grid -->
-<x-website.card-grid 
+<x-website.updated-card 
     title=""
     :cards="[
         [
@@ -43,81 +43,77 @@
     
 </div>
 
-    <x-website.card-grid 
-
-    title="Our Programs"
+    <x-website.updated-card
+    sectionSubheading="Our Programs"
+    sectionHeading="Since 2008 we’ve deployed over $3.5 billion in our programs driving progress."
+    titleSize="fs-3"
+    sectionSubheadingSize="fs-1"
     :cards="[
         [
-            'title' => 'Repricing risks post tariff',
-            'text' => 'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.',
-            'link' => '/products/enterprise',
-            'linkText' => 'View demo',
-            'image' => '/images/pexels-kampus.jpg',
-            'imageAlt' => 'Enterprise Platform'
+            'image' => 'https://www.goldmansachs.com/what-we-do/investment-banking/insights/articles/global-ma-in-2h-2025/2h16x9.jpg',
+            'title' => 'Sale of Informatica to Salesforce for ~$8B',
+            'text' => 'Goldman Sachs acted as exclusive financial advisor to Informatica—a leader in AI-powered enterprise cloud data management—in its sale to Salesforce for ~$8B.',
+            'link' => '/link1',
+            'linkText' => 'Read More'
         ],
-         [
-            'title' => 'Repricing risks post tariff',
-            'text' => 'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.',
-            'link' => '/products/enterprise',
-            'linkText' => 'View demo',
-            'image' => '/images/pexels-kampus.jpg',
-            'imageAlt' => 'Enterprise Platform'
+        [
+            'image' => 'https://www.goldmansachs.com/what-we-do/investment-banking/insights/articles/global-ma-in-2h-2025/2h16x9.jpg',
+            'title' => 'Acquisition of XYZ Corp by ABC Inc.',
+            'text' => 'Goldman Sachs served as the financial advisor to ABC Inc. in its acquisition of XYZ Corp., a leader in innovative tech solutions.',
+            'link' => '/link2',
+            'linkText' => 'Discover More'
         ],
-         [
-            'title' => 'Repricing risks post tariff',
-            'text' => 'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.',
-            'link' => '/products/enterprise',
-            'linkText' => 'View demo',
-            'image' => '/images/pexels-kampus.jpg',
-            'imageAlt' => 'Enterprise Platform'
+        [
+            'image' => 'https://www.goldmansachs.com/what-we-do/investment-banking/insights/articles/global-ma-in-2h-2025/2h16x9.jpg',
+            'title' => 'Projections for Strong M&A Market in 2H 2025',
+            'text' => 'We expect a robust M&A market for the second half of the year. Read our report, “Global M&A: A Bold Path for Strategic Growth,” which highlights record deals year-to-date.',
+            'link' => '/link3',
+            'linkText' => 'Explore More'
         ]
     ]"
+    :mobileFullWidth="true"
+/>
+ 
+
+   <x-website.updated-card
+  
+    :cards="[
+        [
+            'image' => '/images/pexels-kampus.jpg',
+            'title' => 'Sale of Informatica to Salesforce for ~$8B',
+            'text' => 'Goldman Sachs acted as exclusive financial advisor to Informatica—a leader in AI-powered enterprise cloud data management—in its sale to Salesforce for ~$8B.',
+            'link' => '/link1',
+            'linkText' => 'Read More'
+        ],
+        [
+            'image' => '/images/pexels-kampus.jpg',
+            'title' => 'Acquisition of XYZ Corp by ABC Inc.',
+            'text' => 'Goldman Sachs served as the financial advisor to ABC Inc. in its acquisition of XYZ Corp., a leader in innovative tech solutions.',
+            'link' => '/link2',
+            'linkText' => 'Discover More'
+        ],
+        [
+            'image' => '/images/pexels-kampus.jpg',
+            'title' => 'Projections for Strong M&A Market in 2H 2025',
+            'text' => 'We expect a robust M&A market for the second half of the year. Read our report, “Global M&A: A Bold Path for Strategic Growth,” which highlights record deals year-to-date.',
+            'link' => '/link3',
+            'linkText' => 'Explore More'
+        ]
+    ]"
+    :mobileFullWidth="true"
 />
 
-    <x-website.card-grid 
+    <x-website.updated-card
 
        
     title=""
     :cards="[
         [
-            'title' => 'Repricing risks post tariff',
-            'text' => 'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.',
-            'link' => '/products/enterprise',
-            'linkText' => 'View demo',
             'image' => '/images/pexels-kampus.jpg',
-            'imageAlt' => 'Enterprise Platform'
-        ],
-         [
-            'title' => 'Repricing risks post tariff',
-            'text' => 'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.',
-            'link' => '/products/enterprise',
-            'linkText' => 'View demo',
-            'image' => '/images/pexels-kampus.jpg',
-            'imageAlt' => 'Enterprise Platform'
-        ],
-         [
-            'title' => 'Repricing risks post tariff',
-            'text' => 'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.',
-            'link' => '/products/enterprise',
-            'linkText' => 'View demo',
-            'image' => '/images/pexels-kampus.jpg',
-            'imageAlt' => 'Enterprise Platform'
-        ]
-    ]"
-/>
-
-    <x-website.card-grid 
-
-       
-    title=""
-    :cards="[
-        [
-            'title' => 'Repricing risks post tariff',
-            'text' => 'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.',
-            'link' => '/products/enterprise',
-            'linkText' => 'View demo',
-            'image' => '/images/pexels-kampus.jpg',
-            'imageAlt' => 'Enterprise Platform'
+            'title' => 'Projections for Strong M&A Market in 2H 2025',
+            'text' => 'We expect a robust M&A market for the second half of the year. Read our report, “Global M&A: A Bold Path for Strategic Growth,” which highlights record deals year-to-date.',
+            'link' => '/link3',
+            'linkText' => 'Explore More'
         ],
          
     ]"

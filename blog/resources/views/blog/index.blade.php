@@ -12,6 +12,9 @@
                     @endif
                     <div class="card-body">
                         <h5 class="card-title fw-bold">{{ $post->title }}</h5>
+                        <p class="text-muted small mb-2">
+                            {{ $post->created_at->format('M d, Y') }}
+                        </p>
                         <p class="card-text">
                             {{ Str::limit($post->content, 100) }}
                         </p>

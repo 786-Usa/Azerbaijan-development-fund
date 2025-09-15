@@ -76,3 +76,26 @@
     }
 </style>
 @endonce
+
+
+{{-- <x-website.card-grid 
+    title="Equities"
+    :cards="[
+        [
+            'title' => 'Prime Services',
+            'text' => 'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.',
+            'link' => '/services/strategy',
+            'linkText' => 'Learn more'
+        ],
+        [
+            'title' => 'Cash Equities and Execution Services',
+            'text' => 'Exchange-based market-making activities include stocks and ETFs, futures and options.',
+            
+        ],
+        [
+            'title' => 'Derivatives',
+            'text' => 'Our market-leading global franchise offers institutional and corporate clients a suite of listed and OTC option strategies.',
+            'link' => '/services/analytics',
+        ]
+    ]"
+/> --}}

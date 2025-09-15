@@ -12,7 +12,7 @@
     'buttonClass' => 'btn-dark',
     'subtitle' => 'null',
     // New responsive props
-    'titleSize' => 'display-3', // display-1 through display-6
+    'titleSize' => 'display-4', // display-1 through display-6
     'contentSize' => 'fs-5', // fs-1 through fs-6
     'mobileStack' => true // Whether to stack columns on mobile
 ])

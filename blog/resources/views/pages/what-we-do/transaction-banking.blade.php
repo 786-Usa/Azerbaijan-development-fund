@@ -50,111 +50,96 @@ For Corporate Treasurers and Payments Executives, Transaction Banking (TxB™) i
     backgroundImage="/images/corporate-Dubai-42-scaled.jpg"
     contentBoxWidth="500px"
 />
-
-    <x-website.card-grid 
-    title="The Breaks of the Game"
+<x-website.two-cards 
+    headingSize="2.5rem"
+    sectionTitle=""
+    heading="Our Work with Clients"
     :cards="[
         [
-            'title' => 'Repricing risks post tariff',
-            'text' => 'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.',
-            'link' => '/products/enterprise',
-            'linkText' => 'View demo',
             'image' => '/images/pexels-kampus.jpg',
-            'imageAlt' => 'Enterprise Platform'
+            'title' => 'Apollo Global Management',
+            'text' => 'Apollo Global Management embarked on a multi-year journey to fully centralize their treasury and payments operations. TxB provided robust support by offering innovative solutions that helped drive treasury automation, leading to operational efficiency.',
+            'link' => '#'
         ],
-         [
-            'title' => 'Repricing risks post tariff',
-            'text' => 'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.',
-            'link' => '/products/enterprise',
-            'linkText' => 'View demo',
+        [
             'image' => '/images/pexels-kampus.jpg',
-            'imageAlt' => 'Enterprise Platform'
+            'title' => 'Alegeus Technologies',
+            'text' => 'Alegeus needed to operate its COBRA business from a single physical account with sub-ledgering to make their reconciliation easier. Alegeus used TxB’s Virtual Integrated Accounts (VIAs) to help streamline their account structure. ',
+            'link' => '#'
         ]
     ]"
 />
 
-
-    <x-website.card-grid 
-    title="Explore Our Insights"
+    <x-website.updated-card
+    sectionSubheading=""
+    sectionHeading="Explore Our Insights"
+    titleSize="2vw"
     :cards="[
         [
-            'title' => 'Repricing risks post tariff',
-            'text' => 'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.',
-            'link' => '/products/enterprise',
-            'linkText' => 'View demo',
             'image' => '/images/pexels-kampus.jpg',
-            'imageAlt' => 'Enterprise Platform'
+            'title' => 'Beyond the Rate: How Integrated FX Payments Make Treasury Teams',
+            'link' => '/link1',
+            'linkText' => 'Read More'
         ],
-         [
-            'title' => 'Repricing risks post tariff',
-            'text' => 'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.',
-            'link' => '/products/enterprise',
-            'linkText' => 'View demo',
-            'image' => '/images/pexels-kampus.jpg',
-            'imageAlt' => 'Enterprise Platform'
-],
-[
-            'title' => 'Repricing risks post tariff',
-            'text' => 'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.',
-            'link' => '/products/enterprise',
-            'linkText' => 'View demo',
-            'image' => '/images/pexels-kampus.jpg',
-            'imageAlt' => 'Enterprise Platform'
-]
-    ]"
-/>
-
-<x-website.card-grid 
-    title=""
-    :cards="[
         [
-            'title' => 'Repricing risks post tariff',
-            'text' => 'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.',
-            'link' => '/products/enterprise',
-            'linkText' => 'View demo',
             'image' => '/images/pexels-kampus.jpg',
-            'imageAlt' => 'Enterprise Platform'
+            'title' => 'Virtual Accounts: From Consideration to Action',
+            'link' => '/link2',
+            'linkText' => 'Discover More'
         ],
-         [
-            'title' => 'Repricing risks post tariff',
-            'text' => 'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.',
-            'link' => '/products/enterprise',
-            'linkText' => 'View demo',
-            'image' => '/images/pexels-kampus.jpg',
-            'imageAlt' => 'Enterprise Platform'
-],
-[
-            'title' => 'Repricing risks post tariff',
-            'text' => 'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.',
-            'link' => '/products/enterprise',
-            'linkText' => 'View demo',
-            'image' => '/images/pexels-kampus.jpg',
-            'imageAlt' => 'Enterprise Platform'
-]
-    ]"
-/>
-
- <x-website.card-grid 
-    title=""
-    :cards="[
         [
-            'title' => 'Repricing risks post tariff',
-            'text' => 'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.',
-            'link' => '/products/enterprise',
-            'linkText' => 'View demo',
             'image' => '/images/pexels-kampus.jpg',
-            'imageAlt' => 'Enterprise Platform'
-        ],
-         [
-            'title' => 'Repricing risks post tariff',
-            'text' => 'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.',
-            'link' => '/products/enterprise',
-            'linkText' => 'View demo',
-            'image' => '/images/pexels-kampus.jpg',
-            'imageAlt' => 'Enterprise Platform'
+            'title' => 'Virtual Accounts: Nimble Tool Unlocks Opportunities',
+            'link' => '/link3',
+            'linkText' => 'Explore More'
         ]
     ]"
+    :mobileFullWidth="true"
 />
+ <x-website.updated-card
+    :cards="[
+        [
+            'image' => '/images/pexels-kampus.jpg',
+            'title' => 'Foundations for a New Horizon',
+            'link' => '/link1',
+            'linkText' => 'Read More'
+        ],
+        [
+            'image' => '/images/pexels-kampus.jpg',
+            'title' => 'The Case for a Modern Transaction Banking Platform',
+            'link' => '/link2',
+            'linkText' => 'Discover More'
+        ],
+        [
+            'image' => '/images/pexels-kampus.jpg',
+            'title' => 'Treasury Transformation',
+            'link' => '/link3',
+            'linkText' => 'Explore More'
+        ]
+    ]"
+    :mobileFullWidth="true"
+/>
+
+ <x-website.updated-card
+    :cards="[
+        [
+            'image' => '/images/pexels-kampus.jpg',
+            'title' => 'Understanding Global FX Payments',
+            'link' => '/link1',
+            'linkText' => 'Read More'
+        ],
+        [
+            'image' => '/images/pexels-kampus.jpg',
+            'title' => 'Virtual Accounts and In-House Banks',
+            'link' => '/link2',
+            'linkText' => 'Discover More'
+        ]
+    ]"
+    :mobileFullWidth="true"
+/>
+
+ 
+
 
 <x-website.centered-image imageSrc="/images/chinese-march.jpeg" imageAlt="Transaction Banking">
     The above is shown for illustrative purposes and the availability of products referenced within is subject to change. 

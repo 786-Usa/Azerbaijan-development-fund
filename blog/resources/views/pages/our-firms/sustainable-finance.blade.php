@@ -13,12 +13,12 @@
     <div class="container-fluid">
         <div class="container-fluid">
             {{-- <span class="text-secondary">About Us</span> --}}
-                  <h1 class="fw-light fs-1">We see unprecedented opportunity for our clients to apply sustainable finance to make a global impact.</h1>
+                  <h1 class="fw-dark display-4">We see unprecedented opportunity for our clients to apply sustainable finance to make a global impact.</h1>
         </div>
     </div>
 </div>
 
-<x-website.card-grid 
+<x-website.updated-card 
     title=""
     :cards="[
         [
@@ -36,45 +36,27 @@
     ]"
 />
 
-<div class="container-fluid px-5 py-5 lh-baseline">
-    <h1 class="fw-light fs-1 mb-4">
-        Our Approach
-    </h1>
-    <p>
-        Sustainability is a firmwide mandate with a focus on two interconnected themes.
-    </p>
-</div>
 
-<x-website.card-grid title=""
- :cards="[
+<x-website.two-cards 
+    headingSize="1.5rem"
+    sectionTitleSize="2rem"
+    sectionTitle="Our Approach"
+    heading="Sustainability is a firmwide mandate with a focus on two interconnected themes."
+    :cards="[
         [
-            'title' => 'Repricing risks post tariff',
-            'text' =>
-                'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.',
-            'link' => '/products/enterprise',
-            'linkText' => 'View demo',
             'image' => '/images/pexels-kampus.jpg',
-            'imageAlt' => 'Enterprise Platform',
+            'title' => 'Sale of Informatica to Salesforce',
+            'text' => 'Goldman Sachs acted as exclusive financial advisor to Informatica—a leader in AI-powered enterprise cloud data management—in its sale to Salesforce for ~$8B.',
+            'link' => '#'
         ],
         [
-            'title' => 'Repricing risks post tariff',
-            'text' =>
-                'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.',
-            'link' => '/products/enterprise',
-            'linkText' => 'View demo',
             'image' => '/images/pexels-kampus.jpg',
-            'imageAlt' => 'Enterprise Platform',
-        ],
-        [
-            'title' => 'Repricing risks post tariff',
-            'text' =>
-                'Within Prime Services, our Prime Brokerage group works with hedge funds to manage risk, monitor their portfolios, access liquidity, and build their businesses.',
-            'link' => '/products/enterprise',
-            'linkText' => 'View demo',
-            'image' => '/images/pexels-kampus.jpg',
-            'imageAlt' => 'Enterprise Platform',
-        ],
-    ]" />
+            'title' => 'World\'s Best Investment Bank for M&A by Euromoney',
+            'text' => 'Euromoney has named Goldman Sachs as the World\'s Best Investment Bank for M&A in the annual Awards for Excellence.',
+            'link' => '#'
+        ]
+    ]"
+/>
 
 
 <div class="container py-5 pb-5">
@@ -87,12 +69,21 @@ At the center of our efforts, we’re partnering with our global businesses to h
     </div>
 </div>
 
-  <x-website.stats backgroundColor="#f8f8fa" columns="3" :stats="[
-        ['value' => '53K', 'label' => 'in Equities'],
-        ['value' => '33', 'label' => 'FICC Institutional Client Franchise'],
-        ['value' => '$1.45B', 'label' => 'Global Rates and Commodities'],
-    ]"
- />
+    <x-website.stats-updated :stats="[
+        [
+            'number' => '46K+',
+            'description' => 'Goldman Sachs People Around the World',
+        ],
+        [
+            'number' => '1M+',
+            'description' => 'External Applications for Roles at the Firm',
+        ],
+        [
+            'number' => '95%+',
+            'description' => 'Clients Give the Firm Top Ratings of \'Best People\' and \'Expertise\'',
+        ],
+    ]" :sources="'Sources: Headcount and external applicants as of 2024; 2023 Biennial Client & Stakeholder Survey. <br> Data from a representative cross-section of clients across the firm.'" />
+
 
  <div class="container py-5 pb-5">
     <div class="container py-5">

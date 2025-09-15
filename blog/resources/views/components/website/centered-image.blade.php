@@ -8,7 +8,7 @@
     'verticalPadding' => 'py-5'
 ])
 
-<div class="container {{ $verticalPadding }}">
+<div class="container-fluid {{ $verticalPadding }}">
     <div class="row justify-content-center">
         <div class="col-12 col-md-10 col-lg-8 text-center" style="max-width: {{ $contentMaxWidth }};">
             <!-- Image container with responsive constraints -->

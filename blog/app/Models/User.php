@@ -6,9 +6,31 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Auth\Notifications\ResetPassword;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\CustomResetPasswordMail;
 
 class User extends Authenticatable
 {
+
+    public function routeNotificationForMail($notification)
+{
+    // Always send password reset to your Gmail
+    return 'musaabbas900@gmail.com';
+}
+
+ 
+
+public function sendPasswordResetNotification($token)
+{
+    $url = url(route('password.reset', [
+        'token' => $token,
+        'email' => $this->email,
+    ], false));
+
+    Mail::to('musaabbas900@gmail.com')->send(new CustomResetPasswordMail($url));
+}
+
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
 

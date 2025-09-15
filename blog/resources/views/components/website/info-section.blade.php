@@ -4,22 +4,22 @@
     'items' => [] // array of ['text' => '', 'link' => '']
 ])
 
-<div class="container py-5">
-    <div class="row align-items-start lh-base py-5">
+<div class="container-fluid px-5 py-5">
+    <div class="row align-items-start lh-base py-5 w-100">
         
         <!-- Left Column -->
-        <div class="col-md-6">
-            <h1 class="fs-1">{{ $title }}</h1>
-            <p>{{ $description }}</p>
+        <div class="col-md-6 pb-sm-5">
+            <h1 class="display-4 pb-3">{{ $title }}</h1>
+            <p class=" w-md-100 fs-5 text-muted">{{ $description }}</p>
         </div>
 
         <!-- Right Column -->
-        <div class="col-md-6 d-flex flex-column align-items-md-end gap-2 mt-4 mt-md-0 lh-base">
+        <div class="col-md-6 d-flex flex-column gap-2 lh-base ">
             @foreach($items as $item)
                 <a href="{{ $item['link'] ?? '#' }}" 
-                   class="d-flex justify-content-between align-items-center w-100 border-bottom border-secondary pb-2 text-decoration-none text-dark right-item-hover">
-                    <span>{{ $item['text'] }}</span>
-                    <svg class="bi flex-shrink-0" width="16" height="16" fill="currentColor">
+                   class="d-flex justify-content-between align-items-center w-100 border-bottom border-secondary pb-4 mb-4 text-decoration-none text-dark righttext-item-hover">
+                    <span class="text-dark fs-5 fw-dark">{{ $item['text'] }}</span>
+                    <svg class="bi flex-shrink-0" width="25" height="30" fill="currentColor">
                         <use xlink:href="#arrow-right"></use>
                     </svg>
                 </a>
@@ -27,6 +27,7 @@
         </div>
     </div>
 </div>
+
 
 <!-- Bootstrap Icons Sprite -->
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -40,9 +41,9 @@
 
 @push('styles')
 <style>
-    .right-item-hover:hover {
-        background-color: #ffcdcdfd; /* Light gray background */
-        color: #000;
+    .righttext-item-hover:hover {
+        background-color: #242424fd; 
+        color: #ffffff;
         transition: background-color 0.3s ease;
     }
 </style>

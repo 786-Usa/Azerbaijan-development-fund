@@ -3,13 +3,14 @@
     'heading' => null,
     'headingSize' => '2rem', // default size if not provided
     'cards' => [],
+    'sectionTitleSize' => '1.5rem' // default size if not provided
 ])
 
 <div class="container-fluid px-5 mt-5">
     
     {{-- Section Title --}}
     @if($sectionTitle)
-        <h6 class="text-uppercase">{{ $sectionTitle }}</h6>
+        <h6 class="text-uppercase" style="font-size: {{ $sectionTitleSize }};">{{ $sectionTitle }}</h6>
     @endif
 
     {{-- Heading --}}
@@ -44,3 +45,25 @@
     .card-img-top { width: 100%; height: auto; }
 }
 </style>
+
+
+
+{{-- <x-website.two-cards 
+    sectionTitle="Our Firm"
+    heading="We aspire to be the world’s most exceptional financial institution."
+    headingSize="7vw"
+    :cards="[
+        [
+            'image' => 'https://www.goldmansachs.com/what-we-do/investment-banking/insights/articles/global-ma-in-2h-2025/2h16x9.jpg',
+            'title' => 'Sale of Informatica to Salesforce for ~$8B',
+            'text' => 'Goldman Sachs acted as exclusive financial advisor to Informatica—a leader in AI-powered enterprise cloud data management—in its sale to Salesforce for ~$8B.',
+            'link' => '#'
+        ],
+        [
+            'image' => 'https://www.goldmansachs.com/what-we-do/investment-banking/insights/articles/global-ma-in-2h-2025/2h16x9.jpg',
+            'title' => 'World\'s Best Investment Bank for M&A by Euromoney',
+            'text' => 'Euromoney has named Goldman Sachs as the World\'s Best Investment Bank for M&A in the annual Awards for Excellence.',
+            'link' => '#'
+        ]
+    ]"
+/>--}}

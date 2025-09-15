@@ -4,6 +4,11 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\SearchController;
+use Illuminate\Support\Facades\Auth;
+
+Route::get('/search', [SearchController::class, 'search'])->name('search');
+
 
 Route::get('/', function () {
     return view('home');
@@ -57,10 +62,20 @@ Route::get('/our-firm/partnership', function () {
 Route::get('/blog', [PostController::class, 'publicIndex'])->name('blog.index');
 Route::get('/blog/{post}', [PostController::class, 'show'])->name('blog.show');
 
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+
+
+Route::get('/test-login', function () {
+    if (Auth::check()) {
+        return 'Logged in as ' . Auth::user()->email;
+    }
+    return 'Not logged in';
+});
 
 
 Route::middleware('auth')->group(function () {

@@ -1,13 +1,17 @@
 @extends('app')
 
 @section('content')
-    <div class="container py-5 mx-3">
-        <div class="row ">
-            <h1 class="fw-bold fs-1">Enterprise Partnerships</h1>
-            <p class="fw-light fs-3 text-gray">We collaborate with leading organizations to deliver innovative financial
-                solutions.</p>
+   <div class="container-fluid py-5">
+    <div class="container-fluid">
+        <div class="container-fluid">
+                  <h1 class="fw-light display-1">Enterprise Partnerships</h1>
+        </div>
+        <div class="container-fluid">
+         <p class="fw-light text-secondary pt-3 fs-3">
+For major brands, Enterprise Partnerships has embedded financial products — including credit cards and high yield savings accounts — into their ecosystems to help them serve millions of customers.      </p>   
         </div>
     </div>
+</div>
 
     <x-website.image-content imageUrl="https://www.goldmansachs.com/images/careers/GS_VM_Photo_SH_NYC4_00337_1x1.jpg"
         imageAlt="Internship Program" subtitle="" title="Embedded financial products, powered by Goldman Sachs"

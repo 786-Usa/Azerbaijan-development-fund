@@ -3,18 +3,19 @@
     'sectionSubheading' => null,
     'cards' => [],
     'titleSize' => null, // Optional: custom heading size
-    'mobileFullWidth' => false // Optional: stack cards full width on mobile
+    'mobileFullWidth' => false, // Optional: stack cards full width on mobile
+    'sectionSubheadingSize' => null // Optional: custom subheading size
 ])
 
 <div class="container-fluid px-5 mt-5 {{ $mobileFullWidth ? 'mobile-full' : '' }}">
     @if($sectionSubheading)
-        <h6 class="text-uppercase">{{ $sectionSubheading }}</h6>
+        <h6 class=" {{ $sectionSubheadingSize }}">{{ $sectionSubheading }}</h6>
     @endif
 
     @if($sectionHeading)
         <h1 
-            class="mt-3 fw-light pixels" 
-            @if($titleSize) style="font-size: {{ $titleSize }};" @endif
+            class="mt-3 fw-light {{ $titleSize }}" 
+            {{-- @if($titleSize) style="font-size: {{ $titleSize }};" @endif --}}
         >
             {{ $sectionHeading }}
         </h1>
