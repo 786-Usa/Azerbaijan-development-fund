@@ -1,3 +1,0 @@
-Many pilgrims walks from najaf to karbala , or even from basra and their homes to karbala for the sake of love ,humanity saver and this amazing view in karbala is never show in across the world, the world shocked how can anyone are so in grief or love to willing to sacrifice all there savings,or even life to the pilgrims of Imam Hussain a.s!
-This is really miracle in the world, that the love of hazrat Imam Hussain a.s are there in their blood for long time and for years!
-JazakAllah!
